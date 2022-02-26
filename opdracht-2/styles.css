@@ -4,16 +4,23 @@
 
 /* Schrijf hier  jouw CSS! */
 
+      /*moet zijn: [justify-content:flex-end].*/
+
 .one {
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: end; 
 }
+   
+      /*Door [flex-direction: row;] toe te voegen ben je specifieker.*/
 
 .two {
     display: flex;
     justify-content: space-between;
 }
+
+      /*Door [flex-direction: row;] toe te voegen ben je specifieker.
+     [align-items: center;] is niet van toepassing omdat het een enkele rij betreft.*/ 
 
 .three {
     display: flex;
@@ -30,7 +37,15 @@
     justify-content: space-between;
 }
 
+      /*Je vergeet de [div] in het midden te zetten met een klasse. Bijvoorbeeld:
+         .divopd24 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+         }
+      */
 
+      /*Het is specifieker om een speciale klasse te gebruiken, want nu geldt het in het algemeen voor [form].*/
 
 form {
     display: flex;
@@ -40,16 +55,15 @@ form {
 }
 
 
-
 .five{
     display: flex;
     flex-wrap: wrap;
 }
+
+      /*Het is specifieker om een speciale klasse te gebruiken, want nu geldt het in het algemeen voor [article].*/
 
 article{
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: 360px;
 }
-
-
